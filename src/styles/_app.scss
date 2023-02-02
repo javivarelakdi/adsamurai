@@ -1,0 +1,35 @@
+//
+// App
+// --------------------------------------------------
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: greyscale;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sf-n-w100 {
+  width: 100%;
+}
+.sf-n-h100 {
+  height: 100%;
+}
+.sf-n-relative {
+  position: relative;
+}
+.sf-n-absolute {
+  position: absolute;
+}
+.sf-n-block {
+  display: block;
+}
+.sf-n-inline-block {
+  display: inline-block;
+}

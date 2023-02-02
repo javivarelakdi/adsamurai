@@ -1,0 +1,38 @@
+@use 'sass:math';
+
+@function rem($size) {
+    $remSize: math.div($size, $rem);
+    @return $remSize * 1rem;
+}
+
+@function side($side) {
+    @if ($dir == ltr) {
+        @return $side;
+    } @else {
+        @return if($side == left, right, left);
+    }
+}
+
+@mixin bp-small {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin bp-medium {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin bp-large {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin bp-extra-large {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}

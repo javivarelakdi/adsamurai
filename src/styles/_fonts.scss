@@ -1,0 +1,37 @@
+//
+// Fonts
+// --------------------------------------------------
+// Font: Lato
+// URL: http://www.latofonts.com/lato-free-fonts/
+//
+// Extensions used: woff2, woff and ttf in order to support
+// Chrome 3.5+
+// Safari 3+
+// Firefox 3.5+
+// Opera 10.1+
+// IE 9+
+// Android 2.2+
+// iOS 4.3+
+//
+
+// Normal
+@font-face {
+    font-family: "Lato";
+    src: url("fonts/Lato-Regular.woff2") format("woff2"),
+        url("fonts/Lato-Regular.woff") format("woff"),
+        url("fonts/Lato-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+// Bold
+@font-face {
+    font-family: "Lato";
+    src: url("fonts/Lato-Bold.woff2") format("woff2"),
+        url("fonts/Lato-Bold.woff") format("woff"),
+        url("fonts/Lato-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}

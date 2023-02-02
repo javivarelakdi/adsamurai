@@ -1,0 +1,27 @@
+//
+// Theme components
+// --------------------------------------------------
+// Separated in order to make it easier to load them in a
+// project
+// imports should be ordered by css class priorities not alphabetically
+
+@import "app";
+
+body .adsamurai {
+	@import "../components/button";
+	@import "../components/box/box";
+	@import "../hocs/withFontTachyons/with-font-tachyons";
+	@import "../hocs/withSpacingTachyons/with-spacing-tachyons";
+}
+
+
+/*
+ * solves ie11 issue with big cross symbol appearing on inputs when focusing on an input with text
+ * https://stackoverflow.com/questions/14007655/remove-ie10s-clear-field-x-button-on-certain-inputs
+ * Added ms-check display none to avoid default checkboxes on IE-11
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/::-ms-check
+ */
+::-ms-check,
+::-ms-clear {
+	display: none;
+}

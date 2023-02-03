@@ -1,0 +1,38 @@
+.as-txt {
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+  color: $dark;
+  letter-spacing: normal;
+}
+
+.as-txt-title {
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+  color: $dark;
+}
+
+.as-txt--truncated {
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.as-txt--bold {
+  font-weight: bold;
+}
+
+.as-txt--f0 { font-size: rem(20px); }
+.as-txt--f1 { font-size: rem(17px); }
+.as-txt--f2 { font-size: rem(15px); }
+.as-txt--f3 { font-size: rem(14px); }
+.as-txt--f4 { font-size: rem(13px); }
+.as-txt--f5 { font-size: rem(12px); }
+.as-txt--f6 { font-size: rem(11px); }
+.as-txt--f7 { font-size: rem(10px); }
+
+.as-txt--normal { letter-spacing: normal; }
+.as-txt--thin { letter-spacing: -1px; }
+.as-txt--wide { letter-spacing: 1px; }

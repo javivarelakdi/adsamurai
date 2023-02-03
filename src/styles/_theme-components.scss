@@ -8,10 +8,11 @@
 @import "app";
 
 body .adsamurai {
-	@import "../components/button";
+	@import "../components/button/button";
 	@import "../components/box/box";
-	@import "../hocs/withFontTachyons/with-font-tachyons";
-	@import "../hocs/withSpacingTachyons/with-spacing-tachyons";
+	@import "../components/text/text";
+	@import "../components/withFontTachyons/with-font-tachyons";
+	@import "../components/withSpacingTachyons/with-spacing-tachyons";
 }
 
 

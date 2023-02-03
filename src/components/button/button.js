@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 import PropTypes from "prop-types";
-import { withSpacingTachyons } from "../withSpacingTachyons/withSpacingTachyons";
+import withSpacingTachyons from "../withSpacingTachyons/withSpacingTachyons";
 /**
  * Regular Button component with a specific color theme. It is decorated with
  * [withSpacingTachyons](#withSpacingTachyons)
@@ -19,11 +19,11 @@ function Button({ children,
 	type = "button" }) {
 	const btnClasses = classNames({
 		[`${className}`]: className,
-		"sf-n-button": true,
-		[`sf-n-button--${btnType}`]: true,
-		"sf-n-button--pill": pill,
-		[`sf-n-ta-${textAlign}`]: textAlign,
-		"sf-n-txt--bold": bold
+		"as-button": true,
+		[`as-button--${btnType}`]: true,
+		"as-button--pill": pill,
+		[`as-ta-${textAlign}`]: textAlign,
+		"as-txt--bold": bold
 	});
 
 	return (

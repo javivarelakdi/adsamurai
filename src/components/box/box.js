@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import { withSpacingTachyons } from "../withSpacingTachyons/withSpacingTachyons";
+import withSpacingTachyons from "../withSpacingTachyons/withSpacingTachyons";
 
 /**
  * Box is a main Layout component used to create row and column components.

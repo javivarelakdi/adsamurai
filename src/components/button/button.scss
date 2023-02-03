@@ -36,120 +36,87 @@
 .as-ta-right { text-align: side(right); }
 .as-ta-inherit { text-align: inherit; }
 
-
-			.as-primary-light { background-color: $primary-light; }
-			.as-primary-medium { background-color: $primary-medium; }
-			.as-primary-dark { background-color: $primary-dark; }
-			.as-secondary-dark { background-color: $secondary-dark; }
-			.as-secondary-light { background-color: $secondary-light; }
-			.as-secondary-medium { background-color: $secondary-medium; }
-			.as-success-dark { background-color: $success-dark; }
-			.as-success-light { background-color: $success-light; }
-			.as-success-medium { background-color: $success-medium; }
-			.as-danger-dark { background-color: $danger-dark; }
-			.as-danger-light { background-color: $danger-light; }
-			.as-danger-medium { background-color: $danger-medium; }
-
-
-
 .as-button--primary,
 .as-button--with-icon-primary {
-	color: $primary-light;
+	color: $white;
 	background-color: $primary-dark;
 	border: 1px solid transparent;
 	&:hover,
 	&.as-button--active:hover
 	{
-		color: $primary-light;
 		background-color: $primary-medium;
 		border: 1px solid transparent;
 	}
 	&:active,
 	&.as-button--active:active,
 	&.as-button--active {
-		color: $primary-light;
 		background-color: $primary-medium;
 		border: 1px solid transparent;
 	}
 	&:disabled {
-		color: $primary-light;
 		background-color: $primary-light;
 		border: 1px solid transparent;
 	}
 }
 
 .as-button--secondary {
-	color: $secondary-light;
+	color: $white;
 	background-color: $secondary-dark;
 	border: 1px solid transparent;
 	&:hover,
 	&.as-button--active:hover
 	{
-		color: $secondary-light;
 		background-color: $secondary-medium;
 		border: 1px solid transparent;
 	}
 	&:active,
 	&.as-button--active:active,
 	&.as-button--active {
-		color: $secondary-light;
 		background-color: $secondary-medium;
 		border: 1px solid transparent;
 	}
 	&:disabled {
-		color: $secondary-light;
 		background-color: $secondary-light;
 		border: 1px solid transparent;
 	}
 }
 
 .as-button--tertiary {
-	color: $success-light;
+	color: $white;
 	background-color: $success-dark;
 	border: 1px solid transparent;
 	&:hover,
 	&.as-button--active:hover,
 	&:focus {
-		color: $success-light;
 		background-color: $success-medium;
-		border: 1px solid transparent;
 	}
 	&:active,
 	&.as-button--active:active,
 	&.as-button--active {
-		color: $success-light;
 		background-color: $success-medium;
-		border: 1px solid transparent;
 	}
 	&:disabled {
-		color: $success-light;
 		background-color: $success-light;
 		border: 1px solid transparent;
 	}
 }
 
 .as-button--danger {
-	color: $danger-light;
+	color: $white;
 	background-color: $danger-dark;
 	border: 1px solid transparent;
 	&:hover,
 	&.as-button--active:hover,
 	&:focus {
-		color: $danger-light;
 		background-color: $danger-medium;
-		border: 1px solid transparent;
 	}
 	&:active,
 	&.as-button--active:active,
 	&.as-button--active {
-		color: $danger-light;
 		background-color: $danger-medium;
-		border: 1px solid transparent;
 	}
 	&:disabled {
-		color: $danger-light;
 		background-color: $danger-light;
-		border: 1px solid transparent;
 	}
 }
 

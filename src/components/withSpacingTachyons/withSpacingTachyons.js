@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 
 /**
- * withFontTachyons is a higher order function that returns a component with tachyon-like props related
+ * withSpacingTachyons is a higher order function that returns a component with tachyon-like props related
  * to only margin and padding. Basically, it provides the component with a preset spacing scale
  */
 function withSpacingTachyons(SpacingTachyonsComponent) {

@@ -1,9 +1,9 @@
-import './App.css';
+import './styles/theme.scss';
 import PokemonList from "./PokemonList";
 
 function App() {
   return (
-    <div className="App">
+    <div className="adsamurai">
       <PokemonList />
     </div>
   );

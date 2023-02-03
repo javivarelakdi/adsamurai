@@ -15,21 +15,25 @@ body {
   font-weight: 400;
 }
 
-.sf-n-w100 {
+.as-w100 {
   width: 100%;
 }
-.sf-n-h100 {
+.as-h100 {
   height: 100%;
 }
-.sf-n-relative {
+.as-relative {
   position: relative;
 }
-.sf-n-absolute {
+.as-absolute {
   position: absolute;
 }
-.sf-n-block {
+.as-block {
   display: block;
 }
-.sf-n-inline-block {
+.as-inline-block {
   display: inline-block;
+}
+
+.as-list-none {
+  list-style-type: none;
 }

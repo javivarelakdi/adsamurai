@@ -1,0 +1,67 @@
+import {
+    Meta,
+    Story,
+    Canvas,
+    ArgsTable,
+    Description,
+} from "@storybook/addon-docs";
+import Button from "components-ui/components/buttons/button/button";
+
+<Meta title="Buttons/Button" component={Button} />
+
+# Button
+
+<Description of={Button} />
+
+There are different type of buttons: **Primary**, **Secondary**, **Tertiary**, **Danger** and **Pure**.
+
+<Canvas>
+    <Story name="primary" args={{ btnType: "primary" }}>
+        {(args) => <Button {...args}>primary</Button>}
+    </Story>
+    <Story name="secondary" args={{ btnType: "secondary" }}>
+        {(args) => <Button {...args}>secondary</Button>}
+    </Story>
+    <Story name="tertiary" args={{ btnType: "tertiary" }}>
+        {(args) => <Button {...args}>tertiary</Button>}
+    </Story>
+    <Story name="danger" args={{ btnType: "danger" }}>
+        {(args) => <Button {...args}>danger</Button>}
+    </Story>
+</Canvas>
+
+Pill determines whether the button has a pill or circle (if width is the same as height) shape
+
+<Canvas>
+    #true
+    <Story name="pill={true}" args={{ btnType: "secondary", pill: true }}>
+        {(args) => <Button {...args}>Button</Button>}
+    </Story>
+    #false
+    <Story name="pill={false}" args={{ btnType: "secondary", pill: false }}>
+        {(args) => <Button {...args}>Button</Button>}
+    </Story>
+</Canvas>
+
+Determines whether the button is disabled
+
+<Canvas>
+    #true
+    <Story
+        name="disabled={true}"
+        args={{ btnType: "secondary", disabled: true }}
+    >
+        {(args) => <Button {...args}>Button</Button>}
+    </Story>
+    #false
+    <Story
+        name="disabled={false}"
+        args={{ btnType: "secondary", disabled: false }}
+    >
+        {(args) => <Button {...args}>Button</Button>}
+    </Story>
+</Canvas>
+
+## Props
+
+<ArgsTable story="primary" />

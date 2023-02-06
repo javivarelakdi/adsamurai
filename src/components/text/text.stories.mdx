@@ -1,0 +1,107 @@
+import {
+    Meta,
+    Story,
+    Canvas,
+    ArgsTable,
+    Description,
+} from "@storybook/addon-docs";
+import { action } from "@storybook/addon-actions";
+import Text from "./text";
+import { Box } from "components-ui/components";
+
+<Meta title="Text/Text" component={Text} />
+
+# Text
+
+<Description of={Text} />
+
+sizing prop `f1`:
+
+<Canvas>
+    <Story name="f1" args={{ sizing: "f1", fw: "bold" }}>
+        {(args) => <Text {...args}>Text example with sizing f1</Text>}
+    </Story>
+</Canvas>
+
+sizing prop `f2`:
+
+<Canvas>
+    <Story name="f2" args={{ sizing: "f2", fw: "bold" }}>
+        {(args) => <Text {...args}>Text example with sizing f2</Text>}
+    </Story>
+</Canvas>
+
+sizing prop `f3`:
+
+<Canvas>
+    <Story name="f3" args={{ sizing: "f3", fw: "bold" }}>
+        {(args) => <Text {...args}>Text example with sizing f3</Text>}
+    </Story>
+</Canvas>
+
+sizing prop `f4`:
+
+<Canvas>
+    <Story name="f4" args={{ sizing: "f4", fw: "bold" }}>
+        {(args) => <Text {...args}>Text example with sizing f4</Text>}
+    </Story>
+</Canvas>
+
+sizing prop `f5`:
+
+<Canvas>
+    <Story name="f5" args={{ sizing: "f5", fw: "bold" }}>
+        {(args) => <Text {...args}>Text example with sizing f5</Text>}
+    </Story>
+</Canvas>
+
+sizing prop `f6`:
+
+<Canvas>
+    <Story name="f6" args={{ sizing: "f6", fw: "bold" }}>
+        {(args) => <Text {...args}>Text example with sizing f6</Text>}
+    </Story>
+</Canvas>
+
+sizing prop `f7`:
+
+<Canvas>
+    <Story name="f7" args={{ sizing: "f7", fw: "bold" }}>
+        {(args) => <Text {...args}>Text example with sizing f7</Text>}
+    </Story>
+</Canvas>
+
+truncated prop `true`
+
+<Canvas>
+    <Story
+        name="truncated={true}"
+        args={{
+            className: "sf-n-block",
+            truncated: true,
+            sizing: "f4",
+            fw: "bold",
+        }}
+    >
+        {(args) => (
+            <Box xsCol={1}>
+                <Text {...args}>Text example is truncated</Text>
+            </Box>
+        )}
+    </Story>
+</Canvas>
+
+truncated prop `false`
+
+<Canvas>
+    <Story
+        name="truncated={false}"
+        args={{ sizing: "f4", fw: "bold", truncated: false }}
+    >
+        {(args) => <Text {...args}>Text example is not truncated</Text>}
+    </Story>
+</Canvas>
+
+## Props
+
+<ArgsTable story="f1" />

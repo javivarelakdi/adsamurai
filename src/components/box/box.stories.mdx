@@ -1,0 +1,206 @@
+import {
+    Meta,
+    Story,
+    Canvas,
+    ArgsTable,
+    Description,
+} from "@storybook/addon-docs";
+import { Box } from "components-ui/components/box/box";
+import { withSpacingTachyons } from "components-ui/hocs";
+
+<Meta title="Container/Box" component={Box} />
+
+# Box
+
+<Description of={Box} />
+
+Columns can figure out the layout on their own if set to `fill`:
+
+<Canvas>
+    <Story name="fill">
+        {(args) => (
+            <Box flex="row">
+                <Box xsCol="fill">
+                    <div style={{ background: "#ccc", height: "30px" }} />
+                </Box>
+                <Box xsCol="fill">
+                    <div style={{ background: "#777", height: "30px" }} />
+                </Box>
+                <Box xsCol="fill">
+                    <div style={{ background: "#ccc", height: "30px" }} />
+                </Box>
+            </Box>
+        )}
+    </Story>
+</Canvas>
+
+Also, if `fill` is set, they will adjust to the rest of the content:
+
+<Canvas>
+    <Story name="fill with other elements">
+        {(args) => (
+            <Box flex="row">
+                <Box xsCol="fill">
+                    <div style={{ background: "#ccc", height: "30px" }} />
+                </Box>
+                <div style={{ padding: "10px" }}>Content</div>
+                <Box xsCol="fill">
+                    <div style={{ background: "#ccc", height: "30px" }} />
+                </Box>
+            </Box>
+        )}
+    </Story>
+</Canvas>
+
+Non-collapsing columns layout with no padding:
+
+<Canvas>
+    <Story name="non-collapsing">
+        {(args) => (
+            <Box flex="row">
+                <Box xsCol={6}>
+                    <div style={{ background: "#ccc", height: "30px" }} />
+                </Box>
+                <Box xsCol={6}>
+                    <div style={{ background: "#777", height: "30px" }} />
+                </Box>
+            </Box>
+        )}
+    </Story>
+</Canvas>
+
+Non-collapsing columns layout with gutter (notice row"s negative margin
+and columns" padding):
+
+<Canvas>
+    <Story name="Non-collapsing columns with gutter">
+        {(args) => (
+            <Box flex="row" mh={-4}>
+                <Box xsCol={6} ph={4}>
+                    <div style={{ background: "#ccc", height: "30px" }} />
+                </Box>
+                <Box xsCol={6} ph={4}>
+                    <div style={{ background: "#777", height: "30px" }} />
+                </Box>
+            </Box>
+        )}
+    </Story>
+</Canvas>
+
+Collapsing columns layout with gutter:
+
+<Canvas>
+    <Story name="Collapsing columns">
+        {(args) => (
+            <Box flex="row" mh={-4}>
+                <Box xsCol={12} mdCol={3} ph={4}>
+                    <div style={{ background: "#ccc", height: "30px" }} />
+                </Box>
+                <Box xsCol={12} mdCol={3} ph={4}>
+                    <div style={{ background: "#777", height: "30px" }} />
+                </Box>
+                <Box xsCol={12} mdCol={3} ph={4}>
+                    <div style={{ background: "#ccc", height: "30px" }} />
+                </Box>
+                <Box xsCol={12} mdCol={3} ph={4}>
+                    <div style={{ background: "#777", height: "30px" }} />
+                </Box>
+            </Box>
+        )}
+    </Story>
+</Canvas>
+
+Columns with varying height can also be vertically aligned:
+
+<Canvas>
+    <Story name="vertically aligned">
+        {(args) => (
+            <Box flex="row" mh={-4} alignItems="center">
+                <Box xsCol={12} mdCol={4} ph={4}>
+                    <div style={{ background: "#ccc", height: "10px" }} />
+                </Box>
+                <Box xsCol={12} mdCol={4} ph={4}>
+                    <div style={{ background: "#777", height: "70px" }} />
+                </Box>
+                <Box xsCol={12} mdCol={4} ph={4}>
+                    <div style={{ background: "#ccc", height: "20px" }} />
+                </Box>
+            </Box>
+        )}
+    </Story>
+</Canvas>
+
+Or just we can just align one column:
+
+<Canvas>
+    <Story name="vertically aligned one column">
+        {(args) => (
+            <Box flex="row" mh={-4}>
+                <Box xsCol={12} mdCol={4} ph={4}>
+                    <div style={{ background: "#ccc", height: "10px" }} />
+                </Box>
+                <Box xsCol={12} mdCol={4} ph={4}>
+                    <div style={{ background: "#777", height: "70px" }} />
+                </Box>
+                <Box xsCol={12} mdCol={4} ph={4} alignSelf="center">
+                    <div style={{ background: "#ccc", height: "20px" }} />
+                </Box>
+            </Box>
+        )}
+    </Story>
+</Canvas>
+
+Box can position elements without the col property.
+Space-between:
+
+<Canvas>
+    <Story name="space between">
+        {(args) => (
+            <Box flex="row" justifyContent="between">
+                <div
+                    style={{
+                        background: "#ccc",
+                        height: "30px",
+                        width: "40px",
+                    }}
+                />
+                <div
+                    style={{
+                        background: "#ccc",
+                        height: "30px",
+                        width: "40px",
+                    }}
+                />
+            </Box>
+        )}
+    </Story>
+</Canvas>
+
+Space-around:
+
+<Canvas>
+    <Story name="space around">
+        {(args) => (
+            <Box flex="row" justifyContent="around">
+                <div
+                    style={{
+                        background: "#ccc",
+                        height: "30px",
+                        width: "40px",
+                    }}
+                />
+                <div
+                    style={{
+                        background: "#ccc",
+                        height: "30px",
+                        width: "40px",
+                    }}
+                />
+            </Box>
+        )}
+    </Story>
+</Canvas>
+
+## Props
+
+<ArgsTable story="fill" />

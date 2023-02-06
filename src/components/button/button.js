@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 import PropTypes from "prop-types";
-import withSpacingTachyons from "../withSpacingTachyons/withSpacingTachyons";
+import withSpacingTachyons from "../../hocs/withSpacingTachyons/withSpacingTachyons";
 /**
  * Regular Button component with a specific color theme. It is decorated with
  * [withSpacingTachyons](#withSpacingTachyons)

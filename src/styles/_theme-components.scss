@@ -11,8 +11,8 @@ body .adsamurai {
 	@import "../components/button/button";
 	@import "../components/box/box";
 	@import "../components/text/text";
-	@import "../components/withFontTachyons/with-font-tachyons";
-	@import "../components/withSpacingTachyons/with-spacing-tachyons";
+	@import "../hocs/withFontTachyons/with-font-tachyons";
+	@import "../hocs/withSpacingTachyons/with-spacing-tachyons";
 }
 
 

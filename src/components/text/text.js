@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import withFontTachyons from "../withFontTachyons/withFontTachyons";
-import withSpacingTachyons from "../withSpacingTachyons/withSpacingTachyons";
+import withFontTachyons from "../../hocs/withFontTachyons/withFontTachyons";
+import withSpacingTachyons from "../../hocs/withSpacingTachyons/withSpacingTachyons";
 
 /**
  * Text component returning either `<p>` or `<span>` tag by default. Its sizing theme can be customized by
